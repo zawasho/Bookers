@@ -1,0 +1,11 @@
+<p id="notice">Book was successfully created.</p>
+<% @lists.each do |list| %>
+  <p>Title</p>
+  <span>
+    <%= link_to list.title, todolist_path(list.id) %>
+  </span>
+  <p>Body</p>
+  <span>
+    <%= link_to list.body, todolist_path(list.id) %>
+  </span>
+<% end %>
